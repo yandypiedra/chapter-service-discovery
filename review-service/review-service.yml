@@ -3,7 +3,7 @@ management:
     enabled: false
 
 server:
-  port: ${port:8181}
+  port: ${port:8282}
 
 spring:
   rabbitmq:
