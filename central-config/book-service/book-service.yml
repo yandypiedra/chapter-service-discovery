@@ -1,0 +1,22 @@
+management:
+  security:
+    enabled: false
+
+server:
+  port: ${port:8181}
+
+spring:
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+    port: 5672
+    username: guest
+    password: guest
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_DEFAULT_ZONE_URL:http://localhost:8761/eureka}
