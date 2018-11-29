@@ -1,6 +1,8 @@
 management:
-  security:
-    enabled: false
+  endpoints:
+    web:
+      exposure:
+          include: info, health, bus-refresh
 
 server:
   port: ${port:8282}
