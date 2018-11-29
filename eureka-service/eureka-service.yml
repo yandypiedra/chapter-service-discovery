@@ -1,3 +1,9 @@
+management:
+  endpoints:
+    web:
+      exposure:
+          include: info, health, bus-refresh
+
 server:
   port: ${PORT:8761}
   
