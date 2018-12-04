@@ -18,8 +18,6 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    service-url:
-      defaultZone: ${EUREKA_DEFAULT_ZONE_URL:http://localhost:${server.port}/eureka}
   server:
     wait-time-in-ms-when-sync-empty: 5000
     enable-self-preservation: false
