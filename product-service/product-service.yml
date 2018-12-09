@@ -6,6 +6,10 @@ management:
 
 server:
   port: ${port:8181}
+  
+feign:
+  hystrix:
+    enabled: true
 
 spring:
   rabbitmq:
