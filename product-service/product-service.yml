@@ -13,7 +13,7 @@ feign:
     
 hystrix:
   command:
-    default:
+    "ReviewFeignClient#getReviewsForProductId(String)":
       execution:
         isolation:
           thread:
