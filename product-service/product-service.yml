@@ -6,18 +6,6 @@ management:
 
 server:
   port: ${port:8181}
-  
-feign:
-  hystrix:
-    enabled: true
-    
-hystrix:
-  command:
-    "ReviewFeignClient#getReviewsForProductId(String)":
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 5000
 
 spring:
   rabbitmq:
