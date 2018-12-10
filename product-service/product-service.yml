@@ -30,3 +30,4 @@ eureka:
 ribbon:
   eager-load:
     enabled: true
+    clients: review-service
